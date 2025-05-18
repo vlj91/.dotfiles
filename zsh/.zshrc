@@ -32,3 +32,6 @@ export LDFLAGS="-L$(brew --prefix libyaml)/lib"
 export CPPFLAGS="-I$(brew --prefix libyaml)/include"
 export RUBY_YJIT_ENABLE=1
 export RUBY_CONFIGURE_OPTS="--enable-yjit"
+
+# Secrets from 1password CLI
+export GITHUB_PACKAGES_TOKEN=$(op read "op://Private/GitHub Packages Token/credential")
