@@ -16,6 +16,8 @@ alias vim="nvim"
 # Exports
 export EDITOR="nvim"
 export ARCHFLAGS="-arch $(uname -m)"
+
+# ASDF shims
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # ASDF autocomplete
@@ -24,3 +26,9 @@ autoload -Uz compinit && compinit
 
 # ASDF Golang config
 . ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
+
+# ASDF Ruby config
+export LDFLAGS="-L$(brew --prefix libyaml)/lib"
+export CPPFLAGS="-I$(brew --prefix libyaml)/include"
+export RUBY_YJIT_ENABLE=1
+export RUBY_CONFIGURE_OPTS="--enable-yjit"
