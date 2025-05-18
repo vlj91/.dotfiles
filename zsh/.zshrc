@@ -35,3 +35,6 @@ export RUBY_CONFIGURE_OPTS="--enable-yjit"
 
 # Secrets from 1password CLI
 export GITHUB_PACKAGES_TOKEN=$(op read "op://Private/GitHub Packages Token/credential")
+
+# Ruby config
+export BUNDLE_RUBYGEMS__PKG__GITHUB__COM="$GITHUB_PACKAGES_TOKEN"
