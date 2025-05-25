@@ -11,7 +11,7 @@ config.window_background_opacity = 0.95
 config.macos_window_background_blur = 10
 
 -- Colour scheme
-config.color_scheme = "Oxocarbon Dark (Gogh)"
+config.color_scheme = "iceberg-dark"
 
 -- Tabs
 config.hide_tab_bar_if_only_one_tab = true
