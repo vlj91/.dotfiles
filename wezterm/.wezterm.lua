@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- Font
-config.font = wezterm.font("SF Mono Powerline")
+config.font = wezterm.font("DejaVu Sans Mono for Powerline")
 config.font_size = 18
 
 -- Window styling

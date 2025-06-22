@@ -55,3 +55,21 @@ fi
 
 # Ruby config
 export BUNDLE_RUBYGEMS__PKG__GITHUB__COM="$GITHUB_PACKAGES_TOKEN"
+
+# bun completions
+[ -s "/Users/vlj/.bun/_bun" ] && source "/Users/vlj/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# BEGIN ANSIBLE MANAGED BLOCK - SOURCE ~/environment
+# Source ~/environment recursively for files ending with *.rc *.zsh *.sh
+mkdir -p $HOME/environment
+touch $HOME/environment/environment.zsh $HOME/environment/secrets.zsh $HOME/environment/aliases.zsh $HOME/environment/functions.zsh
+for file in $(find -L $HOME/environment -type f -type f \( -name "*.rc" -o -name "*.zsh" -o -name "*.sh" \) | sort ); do
+    if [[ ${DEBUG:-FALSE} == "TRUE" ]]; then
+      echo "Now sourcing ${file}"
+    fi
+    . "${file}"
+done
+# END ANSIBLE MANAGED BLOCK - SOURCE ~/environment
