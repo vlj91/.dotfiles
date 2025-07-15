@@ -73,3 +73,6 @@ for file in $(find -L $HOME/environment -type f -type f \( -name "*.rc" -o -name
     . "${file}"
 done
 # END ANSIBLE MANAGED BLOCK - SOURCE ~/environment
+
+# opencode
+export PATH=/Users/vlj/.opencode/bin:$PATH
