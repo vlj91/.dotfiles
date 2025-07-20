@@ -39,13 +39,13 @@ if.app-id = 'com.google.Chrome'
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
-if.app-name-regex-substring = "slack"
+if.app-name-regex-substring = "Slack"
 run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
-if.app-name-regex-substring = "discord"
+if.app-name-regex-substring = "Discord"
 run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
-if.app-name-regex-substring = "messages"
+if.app-name-regex-substring = "Messages"
 run = ['move-node-to-workspace 5']
