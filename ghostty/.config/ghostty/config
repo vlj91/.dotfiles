@@ -2,3 +2,7 @@ font-size = 18
 font-family = "DejaVu Sans Mono for Powerline"
 cursor-style = bar
 theme = rose-pine
+shell-integration-features = no-cursor,no-sudo,title
+macos-titlebar-style = hidden
+window-padding-y = 6,0
+window-padding-x = 4,2
