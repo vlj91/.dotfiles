@@ -2,3 +2,4 @@
 require("config.lazy")
 
 vim.g.copilot_settings = { selectedCompletionModel = 'gpt-4o-copilot' }
+vim.lsp.enable('kotlin_lsp')

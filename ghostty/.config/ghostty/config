@@ -1,5 +1,5 @@
 font-size = 18
-font-family = "DejaVu Sans Mono for Powerline"
+font-family = "Menlo for Powerline"
 cursor-style = bar
 theme = rose-pine
 shell-integration-features = no-cursor,no-sudo,title
