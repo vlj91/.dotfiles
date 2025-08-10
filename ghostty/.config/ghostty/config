@@ -1,6 +1,6 @@
-font-size = 18
-font-family = "Menlo for Powerline"
-cursor-style = bar
+font-size = 16
+font-family = MesloLGS Nerd Font Mono
+cursor-style = block
 theme = rose-pine
 shell-integration-features = no-cursor,no-sudo,title
 macos-titlebar-style = hidden

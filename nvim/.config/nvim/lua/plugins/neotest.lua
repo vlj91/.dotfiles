@@ -16,7 +16,7 @@ return {
               "rspec",
             })
           end
-        })
+        }),
       },
     })
   end
