@@ -1,3 +1,26 @@
+accordion-padding = 4
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+after-startup-command = [
+  'exec-and-forget borders'
+]
+
+[gaps]
+#outer.top =     [
+#  # offset of 32 on internal display, because of notch (16" MPB)
+#  { monitor.'built-in.*' = 16 },
+#  48
+#]
+#outer.right =      4
+#outer.bottom =     4
+#outer.left =       4
+#inner.horizontal = 4
+#inner.vertical =   4
+
 [mode.main.binding]
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
@@ -11,6 +34,11 @@ alt-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
 alt-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
 alt-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
 alt-shift-6 = 'move-node-to-workspace 6 --focus-follows-window'
+
+cmd-alt-ctrl-shift-left = 'move left'
+cmd-alt-ctrl-shift-down = 'move down'
+cmd-alt-ctrl-shift-up = 'move up'
+cmd-alt-ctrl-shift-right = 'move right'
 
 alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
 

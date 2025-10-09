@@ -76,3 +76,7 @@ done
 
 # opencode
 export PATH=/Users/vlj/.opencode/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+PATH=$PATH:~/.kube/commands/
+
+PATH="~/.local/bin:$PATH"
