@@ -5,21 +5,13 @@ default-root-container-orientation = 'auto'
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-after-startup-command = [
-  'exec-and-forget borders'
-]
-
 [gaps]
-#outer.top =     [
-#  # offset of 32 on internal display, because of notch (16" MPB)
-#  { monitor.'built-in.*' = 16 },
-#  48
-#]
-#outer.right =      4
-#outer.bottom =     4
-#outer.left =       4
-#inner.horizontal = 4
-#inner.vertical =   4
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.right = 10
+outer.top = 10
+outer.bottom = 10
 
 [mode.main.binding]
 alt-1 = 'workspace 1'
@@ -57,24 +49,12 @@ alt-tab = 'workspace-back-and-forth'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = ['move-node-to-workspace 2']
-
-[[on-window-detected]]
-if.app-name-regex-substring = "Slack"
 run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.app-name-regex-substring = "Discord"
-run = ['move-node-to-workspace 5']
+run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-name-regex-substring = "Messages"
-run = ['move-node-to-workspace 5']
+run = ['move-node-to-workspace 4']
