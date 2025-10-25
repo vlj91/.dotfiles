@@ -1,9 +1,21 @@
+# Font
 font-size = 16
-font-family = SFMono Nerd Font
-cursor-style = block
+font-family = "SFMono Nerd Font"
+font-family-bold = "SFMono Nerd Font"
+font-family-italic = "SFMono Nerd Font"
+font-family-bold-italic = "SFMono Nerd Font"
+font-feature = +liga
+font-thicken = true
+font-thicken-strength = 70
+
+# Style
 theme = carbonfox
+cursor-style = block
 shell-integration-features = no-cursor,no-sudo,title
 macos-titlebar-style = hidden
 window-padding-y = 6,0
 window-padding-x = 4,2
+window-colorspace = display-p3
+
+# Keybinds
 keybind = shift+enter=text:\x1b\r
