@@ -1,9 +1,9 @@
 # Font
-font-size = 16
-font-family = "SFMono Nerd Font"
-font-family-bold = "SFMono Nerd Font"
-font-family-italic = "SFMono Nerd Font"
-font-family-bold-italic = "SFMono Nerd Font"
+font-size = 20
+font-family = Inconsolata Nerd Font Mono
+font-family-bold = Inconsolata Nerd Font Mono Bold
+font-family-italic = Inconsolata Nerd Font Mono 
+font-family-bold-italic = Inconsolata Nerd Font Mono Bold
 font-feature = +liga
 font-thicken = true
 font-thicken-strength = 70
@@ -13,8 +13,8 @@ theme = carbonfox
 cursor-style = block
 shell-integration-features = no-cursor,no-sudo,title
 macos-titlebar-style = hidden
-window-padding-y = 6,0
-window-padding-x = 4,2
+window-padding-y = 8
+window-padding-x = 8
 window-colorspace = display-p3
 
 # Keybinds
